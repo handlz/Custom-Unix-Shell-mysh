@@ -46,11 +46,17 @@ This project strengthened my skills in **systems programming, process control, s
 
 ## 📂 Project Structure
 ├── mysh.c # Main shell loop (prompt, parsing, job control, signals)
+
 ├── builtins.c/.h # Built-in commands (echo, ls, cd, cat, wc, kill, ps, networking)
+
 ├── commands.c/.h # Variable assignment & expansion
+
 ├── variables.c/.h # Linked-list environment variable system
+
 ├── io_helpers.c/.h # Input/output handling & tokenization
+
 ├── network.c/.h # TCP server/client support
+
 ├── Makefile # Build automation
 
 
