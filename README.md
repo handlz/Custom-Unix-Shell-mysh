@@ -45,4 +45,69 @@ This project strengthened my skills in **systems programming, process control, s
 ---
 
 ## 📂 Project Structure
+├── mysh.c # Main shell loop (prompt, parsing, job control, signals)
+├── builtins.c/.h # Built-in commands (echo, ls, cd, cat, wc, kill, ps, networking)
+├── commands.c/.h # Variable assignment & expansion
+├── variables.c/.h # Linked-list environment variable system
+├── io_helpers.c/.h # Input/output handling & tokenization
+├── network.c/.h # TCP server/client support
+├── Makefile # Build automation
 
+
+---
+
+## ⚡ Usage
+
+### 1. Build
+```bash
+make
+
+2. Run
+./mysh
+
+3. Example Commands
+mysh$ echo Hello World
+mysh$ X=10
+mysh$ echo Value of X is $X
+mysh$ ls --rec --d 2 src
+mysh$ cat file.txt | wc
+mysh$ sleep 10 &
+mysh$ ps
+mysh$ start-server 8080
+mysh$ start-client 8080 localhost
+
+🛠️ Technical Highlights
+
+Process control with fork(), execvp(), waitpid()
+
+Pipelines via dup2() and file descriptors
+
+Signal handling with sigaction() (SIGINT, SIGCHLD)
+
+Networking with socket(), bind(), listen(), accept(), select()
+
+Memory management with malloc, free, and linked lists
+
+Robust error handling for invalid inputs, paths, or socket failures
+
+📚 What I Learned
+
+How shells parse and execute commands
+
+Managing pipes, background jobs, and signals safely
+
+Building networked applications in C using sockets
+
+Designing a modular system with reusable components
+
+Debugging complex multi-process and multi-client systems
+
+🔮 Future Improvements
+
+Add I/O redirection (>, <, >>)
+
+Enhance networking with chat history & private messaging
+
+Persistent variable storage across sessions
+
+Add testing framework for builtins and networking layer
