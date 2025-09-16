@@ -1,4 +1,4 @@
-# 🐚 mysh — Custom Unix Shell
+# mysh — Custom Unix Shell
 
 `mysh` is a **custom Unix-style shell** implemented in C for the University of Toronto CSC209 course.  
 It extends traditional shell functionality with **built-in commands, variable management, pipelines, background processes, and TCP networking features**.
@@ -82,7 +82,7 @@ mysh$ ps
 mysh$ start-server 8080
 mysh$ start-client 8080 localhost
 
-🛠️ Technical Highlights
+### 🛠️ Technical Highlights
 
 Process control with fork(), execvp(), waitpid()
 
@@ -96,7 +96,7 @@ Memory management with malloc, free, and linked lists
 
 Robust error handling for invalid inputs, paths, or socket failures
 
-📚 What I Learned
+### 📚 What I Learned
 
 How shells parse and execute commands
 
@@ -108,7 +108,7 @@ Designing a modular system with reusable components
 
 Debugging complex multi-process and multi-client systems
 
-🔮 Future Improvements
+### 🔮 Future Improvements
 
 Add I/O redirection (>, <, >>)
 
